@@ -16,6 +16,7 @@ for line in fh:
         continue
     if line.startswith('From '):
         linesplit = line.split()
+        #isolate day of commit
         day = linesplit[2:3]
 #fill in dictionary
     for d in day :
